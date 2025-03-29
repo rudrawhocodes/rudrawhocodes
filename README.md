@@ -1,4 +1,4 @@
-<header> <img align="center" src="https://camo.githubusercontent.com/f613e8746d422f12435a596c5be3e5d4c6e863b2a1a1284557baf4f4d98a076a/68747470733a2f2f692e6962622e636f2f4b7a356246794d672f4845414445522e706e67"> 
+<header> <img align="center" width="500" length="1000" src="https://camo.githubusercontent.com/f613e8746d422f12435a596c5be3e5d4c6e863b2a1a1284557baf4f4d98a076a/68747470733a2f2f692e6962622e636f2f4b7a356246794d672f4845414445522e706e67"> 
 </header>
 <h1 align="center">Hi 👋, I'm RUDRA THACKER</h1>
 <h3 align="center">A CODER FROM INDIA, WHO IS IN LOVE WITH TECH AND FINANCE, AN ASPIRING SOFTWARE DEVELOPER AND QUANT RESEARCHER</h3>
