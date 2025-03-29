@@ -1,5 +1,5 @@
 <header>
-        <img src="<a href="https://ibb.co/93pcsYF0"><img src="https://i.ibb.co/Kz5bFyMg/HEADER.png" alt="HEADER" border="0"></a>"
+        <img src="https://i.ibb.co/Kz5bFyMg/HEADER.png" alt="HEADER">
     </header>
 <h1 align="center">Hi 👋, I'm RUDRA THACKER</h1>
 <h3 align="center">A CODER FROM INDIA,WHO IS IN LOVE WITH TECH AND FINANCE, AN ASPIRING SOFTWARE DEVELOPER AND QUANT RESEARCHER</h3>
