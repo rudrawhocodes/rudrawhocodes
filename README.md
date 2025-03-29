@@ -14,7 +14,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/rudrawhocodes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rudrawhocodes" height="30" width="40" /></a>
-<a href="linkedin.com/in/rudra-thacker-47b4a5345" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="in/rudra-thacker-47b4a5345" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/rudra-thacker-47b4a5345/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="in/rudra-thacker-47b4a5345" height="30" width="40" /></a>
 <a href="https://instagram.com/https://www.instagram.com/_rudra__thakkar/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="https://www.instagram.com/_rudra__thakkar/" height="30" width="40" /></a>
 <a href="https://www.leetcode.com/https://leetcode.com/u/rudrawhocodes/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="https://leetcode.com/u/rudrawhocodes/" height="30" width="40" /></a>
 </p>
