@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualizer - Learn Data Structures & Algorithms</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>DSA Visualizer</h1>
+                <span>by Rudra Thacker</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#data-structures" class="nav-link">Data Structures</a></li>
+                <li><a href="#algorithms" class="nav-link">Algorithms</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Master Data Structures & Algorithms</h1>
+                <p>Interactive visualizations with Java and C++ implementations</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('data-structures')">
+                        Explore Data Structures
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('algorithms')">
+                        Learn Algorithms
+                    </button>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-elements">
+                    <div class="element">Array</div>
+                    <div class="element">Stack</div>
+                    <div class="element">Queue</div>
+                    <div class="element">Tree</div>
+                    <div class="element">Graph</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Structures Section -->
+        <section id="data-structures" class="section">
+            <div class="container">
+                <h2 class="section-title">Data Structures</h2>
+                <p class="section-subtitle">Visualize and understand fundamental data structures</p>
+                
+                <div class="ds-grid">
+                    <div class="ds-card" onclick="openVisualizer('array')">
+                        <div class="ds-icon">📊</div>
+                        <h3>Arrays</h3>
+                        <p>Linear collection of elements with fixed size and indexed access</p>
+                        <div class="complexity">
+                            <span>Access: O(1)</span>
+                            <span>Search: O(n)</span>
+                        </div>
+                    </div>
+
+                    <div class="ds-card" onclick="openVisualizer('linkedlist')">
+                        <div class="ds-icon">🔗</div>
+                        <h3>Linked Lists</h3>
+                        <p>Dynamic data structure with nodes connected via pointers</p>
+                        <div class="complexity">
+                            <span>Insert: O(1)</span>
+                            <span>Delete: O(1)</span>
+                        </div>
+                    </div>
+
+                    <div class="ds-card" onclick="openVisualizer('stack')">
+                        <div class="ds-icon">📚</div>
+                        <h3>Stack</h3>
+                        <p>LIFO (Last In First Out) data structure for managing data</p>
+                        <div class="complexity">
+                            <span>Push: O(1)</span>
+                            <span>Pop: O(1)</span>
+                        </div>
+                    </div>
+
+                    <div class="ds-card" onclick="openVisualizer('queue')">
+                        <div class="ds-icon">🚶</div>
+                        <h3>Queue</h3>
+                        <p>FIFO (First In First Out) data structure for sequential processing</p>
+                        <div class="complexity">
+                            <span>Enqueue: O(1)</span>
+                            <span>Dequeue: O(1)</span>
+                        </div>
+                    </div>
+
+                    <div class="ds-card" onclick="openVisualizer('tree')">
+                        <div class="ds-icon">🌳</div>
+                        <h3>Binary Trees</h3>
+                        <p>Hierarchical structure with nodes having at most two children</p>
+                        <div class="complexity">
+                            <span>Search: O(log n)</span>
+                            <span>Insert: O(log n)</span>
+                        </div>
+                    </div>
+
+                    <div class="ds-card" onclick="openVisualizer('graph')">
+                        <div class="ds-icon">🕸️</div>
+                        <h3>Graphs</h3>
+                        <p>Network of vertices connected by edges for complex relationships</p>
+                        <div class="complexity">
+                            <span>BFS: O(V+E)</span>
+                            <span>DFS: O(V+E)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Algorithms Section -->
+        <section id="algorithms" class="section">
+            <div class="container">
+                <h2 class="section-title">Algorithms</h2>
+                <p class="section-subtitle">Step-by-step algorithm visualizations</p>
+                
+                <div class="algo-categories">
+                    <div class="algo-category">
+                        <h3>Sorting Algorithms</h3>
+                        <div class="algo-list">
+                            <div class="algo-item" onclick="openAlgorithm('bubble-sort')">
+                                <span>Bubble Sort</span>
+                                <span class="complexity">O(n²)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('quick-sort')">
+                                <span>Quick Sort</span>
+                                <span class="complexity">O(n log n)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('merge-sort')">
+                                <span>Merge Sort</span>
+                                <span class="complexity">O(n log n)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('heap-sort')">
+                                <span>Heap Sort</span>
+                                <span class="complexity">O(n log n)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="algo-category">
+                        <h3>Search Algorithms</h3>
+                        <div class="algo-list">
+                            <div class="algo-item" onclick="openAlgorithm('linear-search')">
+                                <span>Linear Search</span>
+                                <span class="complexity">O(n)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('binary-search')">
+                                <span>Binary Search</span>
+                                <span class="complexity">O(log n)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="algo-category">
+                        <h3>Graph Algorithms</h3>
+                        <div class="algo-list">
+                            <div class="algo-item" onclick="openAlgorithm('bfs')">
+                                <span>Breadth-First Search</span>
+                                <span class="complexity">O(V+E)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('dfs')">
+                                <span>Depth-First Search</span>
+                                <span class="complexity">O(V+E)</span>
+                            </div>
+                            <div class="algo-item" onclick="openAlgorithm('dijkstra')">
+                                <span>Dijkstra's Algorithm</span>
+                                <span class="complexity">O(V²)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visualizer Modal -->
+        <div id="visualizer-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title">Visualizer</h2>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="visualizer-controls">
+                        <button id="play-btn" class="control-btn">▶️ Play</button>
+                        <button id="pause-btn" class="control-btn">⏸️ Pause</button>
+                        <button id="reset-btn" class="control-btn">🔄 Reset</button>
+                        <button id="step-btn" class="control-btn">⏭️ Step</button>
+                        <div class="speed-control">
+                            <label>Speed:</label>
+                            <input type="range" id="speed-slider" min="1" max="10" value="5">
+                        </div>
+                    </div>
+                    <div id="visualization-area" class="visualization-area">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                    <div class="code-panel">
+                        <div class="language-toggle">
+                            <button class="lang-btn active" data-lang="java">Java</button>
+                            <button class="lang-btn" data-lang="cpp">C++</button>
+                        </div>
+                        <div id="code-display" class="code-display">
+                            <!-- Code will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About This Project</h2>
+                <div class="about-content">
+                    <p>
+                        This DSA Visualizer is designed to help students understand complex data structures 
+                        and algorithms through interactive visualizations. Each concept is presented with 
+                        both Java and C++ implementations, making it easier to grasp the underlying logic.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <h4>🎯 Interactive Learning</h4>
+                            <p>Step-by-step visualizations with play, pause, and step controls</p>
+                        </div>
+                        <div class="feature">
+                            <h4>💻 Dual Language Support</h4>
+                            <p>Code examples in both Java and C++ for comprehensive understanding</p>
+                        </div>
+                        <div class="feature">
+                            <h4>📱 Responsive Design</h4>
+                            <p>Works seamlessly on desktop, tablet, and mobile devices</p>
+                        </div>
+                        <div class="feature">
+                            <h4>⚡ Performance Insights</h4>
+                            <p>Time and space complexity analysis for each algorithm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 DSA Visualizer by Rudra Thacker. Built with ❤️ for learning.</p>
+            <div class="social-links">
+                <a href="https://github.com/rudrawhocodes" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/rudra-thacker-47b4a5345/" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/rudrawhocodes" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/visualizers/array.js"></script>
+    <script src="scripts/visualizers/stack.js"></script>
+    <script src="scripts/visualizers/queue.js"></script>
+    <script src="scripts/algorithms/sorting.js"></script>
+</body>
+</html>
